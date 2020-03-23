@@ -31,6 +31,11 @@ var myChart = echarts.init(document.getElementById('main'));
                 data: ["2000","2005","2010","2015","2020"]
             },
             yAxis: {},
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'line',
+            }},
             series: [{
                 name: '排名',
                 type: 'line',
